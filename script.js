@@ -1,4 +1,10 @@
 const currentPage = document.body.dataset.page;
+const root = document.documentElement;
+const body = document.body;
+const themeStorageKey = "jo-theme";
+const themeToggle = document.querySelector("[data-theme-toggle]");
+const themeIcon = document.querySelector("[data-theme-icon]");
+const themeLabel = document.querySelector("[data-theme-label]");
 
 document.querySelectorAll("[data-nav]").forEach((link) => {
   const isActive = link.dataset.nav === currentPage;
@@ -8,29 +14,38 @@ document.querySelectorAll("[data-nav]").forEach((link) => {
   }
 });
 
-const themeStorageKey = "jo-theme";
-const themeToggle = document.querySelector("[data-theme-toggle]");
-const root = document.documentElement;
 const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
   ? "dark"
   : "light";
-const savedTheme = localStorage.getItem(themeStorageKey);
+let savedTheme = null;
+
+try {
+  savedTheme = localStorage.getItem(themeStorageKey);
+} catch {
+  savedTheme = null;
+}
 
 const applyTheme = (theme) => {
-  root.dataset.theme = theme;
-  if (!themeToggle) return;
+  root.setAttribute("data-theme", theme);
+  body.setAttribute("data-theme", theme);
+  if (!themeToggle || !themeIcon || !themeLabel) return;
 
-  const nextLabel = theme === "dark" ? "Switch to bright mode" : "Switch to night mode";
-  themeToggle.textContent = nextLabel;
-  themeToggle.setAttribute("aria-label", nextLabel);
+  const isDark = theme === "dark";
+  themeIcon.textContent = isDark ? "☾" : "☀";
+  themeLabel.textContent = isDark ? "Dark mode" : "Bright mode";
+  themeToggle.setAttribute("aria-label", isDark ? "Dark mode enabled" : "Bright mode enabled");
 };
 
 applyTheme(savedTheme || preferredTheme);
 
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
-    const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
-    localStorage.setItem(themeStorageKey, nextTheme);
+    const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    try {
+      localStorage.setItem(themeStorageKey, nextTheme);
+    } catch {
+      // Ignore storage failures and still switch theme for the current session.
+    }
     applyTheme(nextTheme);
   });
 }
