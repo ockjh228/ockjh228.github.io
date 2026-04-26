@@ -15,7 +15,7 @@
 
 아래 파일들에서 공통으로 들어가는 본인 정보를 먼저 바꾸세요.
 
-- `Your Name`
+- `Jonghoon Ock`
 - `Developer, Designer, Researcher`
 - `you@example.com`
 - `Seoul, South Korea`
@@ -28,7 +28,7 @@
 - `publications.html`: 논문 / 글 / 발표 자료 목록
 - `projects.html`: 프로젝트 목록
 
-왼쪽 상단의 `YN`은 이니셜입니다. 본인 이니셜로 바꾸면 됩니다.
+프로필 사진은 `assets/profile.jpg`를 사용하도록 연결되어 있습니다.
 
 ## 로컬에서 미리보기
 
