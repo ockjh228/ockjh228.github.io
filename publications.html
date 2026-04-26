@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publications | Your Name</title>
+    <meta
+      name="description"
+      content="논문, 기술 글, 발표 자료를 정리하는 개인 홈페이지용 Publications 페이지"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="publications">
+    <div class="page-shell">
+      <aside class="profile-card">
+        <div class="avatar" aria-hidden="true">
+          <span>YN</span>
+        </div>
+        <div class="profile-copy">
+          <p class="eyebrow">PERSONAL SITE</p>
+          <h1>Your Name</h1>
+          <p class="role">Developer, Designer, Researcher</p>
+          <p class="summary">
+            논문, 글, 발표 자료, 외부 링크를 정리하는 아카이브 페이지.
+          </p>
+        </div>
+        <div class="meta-list">
+          <div>
+            <span class="meta-label">Base</span>
+            <strong>Seoul, South Korea</strong>
+          </div>
+          <div>
+            <span class="meta-label">Focus</span>
+            <strong>Web, AI, Product</strong>
+          </div>
+          <div>
+            <span class="meta-label">Contact</span>
+            <strong>you@example.com</strong>
+          </div>
+        </div>
+        <nav class="side-nav" aria-label="Primary navigation">
+          <a data-nav="home" href="index.html">Home</a>
+          <a data-nav="news" href="news.html">News</a>
+          <a data-nav="publications" href="publications.html">Publications</a>
+          <a data-nav="projects" href="projects.html">Projects</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="social-links">
+          <a href="https://github.com/your-id" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/your-id" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://your-notion-or-blog.com" target="_blank" rel="noreferrer">Blog</a>
+        </div>
+      </aside>
+
+      <main class="content">
+        <section class="page-intro">
+          <p class="eyebrow">Publications</p>
+          <h2>논문, 글, 발표 자료를 항목 단위로 읽기 쉽게 정리</h2>
+          <p class="hero-body">
+            학술용이라면 논문 목록으로, 일반 포트폴리오라면 기술 글과 발표
+            자료 목록으로 바꿔 사용할 수 있습니다.
+          </p>
+        </section>
+
+        <section class="list-stack">
+          <article class="list-card">
+            <span class="list-date">Preprint / 2026</span>
+            <h3>Publication Title One</h3>
+            <p class="list-subtitle">Your Name, Collaborator A, Collaborator B</p>
+            <p>
+              저널, 학회, 아카이브 상태 등을 적으세요. 한 줄 설명으로 핵심
+              주제를 붙여도 좋습니다.
+            </p>
+            <div class="tag-row">
+              <span>Paper</span>
+              <span>ArXiv</span>
+              <span>Multi-Agent</span>
+            </div>
+            <div class="inline-links">
+              <a href="https://arxiv.org/" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://example.com" target="_blank" rel="noreferrer">Project Page</a>
+            </div>
+          </article>
+
+          <article class="list-card">
+            <span class="list-date">Talk / 2025</span>
+            <h3>Writing or Talk Title Two</h3>
+            <p class="list-subtitle">Conference, Meetup, Blog, Internal Memo</p>
+            <p>
+              논문이 아니라 기술 글이나 발표 자료를 넣고 싶다면 같은 카드
+              형식으로 정리하면 됩니다.
+            </p>
+            <div class="tag-row">
+              <span>Writing</span>
+              <span>Presentation</span>
+            </div>
+            <div class="inline-links">
+              <a href="https://example.com" target="_blank" rel="noreferrer">Read</a>
+              <a href="https://example.com" target="_blank" rel="noreferrer">Slides</a>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Your Name. Built for GitHub Pages.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

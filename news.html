@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News | Your Name</title>
+    <meta
+      name="description"
+      content="최근 소식과 타임라인을 정리하는 개인 홈페이지용 News 페이지"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="news">
+    <div class="page-shell">
+      <aside class="profile-card">
+        <div class="avatar" aria-hidden="true">
+          <span>YN</span>
+        </div>
+        <div class="profile-copy">
+          <p class="eyebrow">PERSONAL SITE</p>
+          <h1>Your Name</h1>
+          <p class="role">Developer, Designer, Researcher</p>
+          <p class="summary">
+            최근 소식과 이력을 짧고 빠르게 확인할 수 있는 업데이트 페이지.
+          </p>
+        </div>
+        <div class="meta-list">
+          <div>
+            <span class="meta-label">Base</span>
+            <strong>Seoul, South Korea</strong>
+          </div>
+          <div>
+            <span class="meta-label">Focus</span>
+            <strong>Web, AI, Product</strong>
+          </div>
+          <div>
+            <span class="meta-label">Contact</span>
+            <strong>you@example.com</strong>
+          </div>
+        </div>
+        <nav class="side-nav" aria-label="Primary navigation">
+          <a data-nav="home" href="index.html">Home</a>
+          <a data-nav="news" href="news.html">News</a>
+          <a data-nav="publications" href="publications.html">Publications</a>
+          <a data-nav="projects" href="projects.html">Projects</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="social-links">
+          <a href="https://github.com/your-id" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/your-id" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://your-notion-or-blog.com" target="_blank" rel="noreferrer">Blog</a>
+        </div>
+      </aside>
+
+      <main class="content">
+        <section class="page-intro">
+          <p class="eyebrow">News</p>
+          <h2>최근 소식, 변화, 일정, 발표를 한곳에 모아두는 페이지</h2>
+          <p class="hero-body">
+            짧은 문장으로 계속 추가하기 쉬운 형식이 좋습니다. 방문자는 이
+            페이지에서 당신의 최신 상태를 가장 빠르게 파악하게 됩니다.
+          </p>
+        </section>
+
+        <section class="list-stack">
+          <article class="list-card">
+            <span class="list-date">Apr 2026</span>
+            <h3>개인 홈페이지 구조 개편</h3>
+            <p>
+              홈, News, Publications, Projects를 분리한 구조로 개편하고
+              GitHub Pages에 배포했습니다.
+            </p>
+          </article>
+
+          <article class="list-card">
+            <span class="list-date">Jan 2026</span>
+            <h3>새 프로젝트 시작</h3>
+            <p>
+              새로운 회사, 연구실, 사이드 프로젝트, 오픈소스 작업 시작 등의
+              내용을 적으면 됩니다.
+            </p>
+          </article>
+
+          <article class="list-card">
+            <span class="list-date">Sep 2025</span>
+            <h3>발표 또는 출판</h3>
+            <p>
+              발표, 수상, 논문, 블로그 공개, 제품 출시 등 짧은 업데이트를
+              계속 누적하세요.
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Your Name. Built for GitHub Pages.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
