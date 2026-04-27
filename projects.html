@@ -12,10 +12,12 @@
   </head>
   <body data-page="projects">
     <div class="page-shell">
+      <!-- Shared sidebar: keep this block aligned with the other HTML pages for a consistent left profile area. -->
       <aside class="profile-card">
         <div class="avatar">
           <img src="assets/profile.jpg" alt="Portrait of Jonghoon Ock" />
         </div>
+        <!-- Basic identity shown in the sidebar. -->
         <div class="profile-copy">
           <p class="eyebrow">PERSONAL WEBSITE</p>
           <h1>Jonghoon Ock</h1>
@@ -24,6 +26,7 @@
             A page for selected projects, systems work, experiments, and product case studies.
           </p>
         </div>
+        <!-- Quick facts. Add or delete one row by copying or removing a single inner <div>. -->
         <div class="meta-list">
           <div>
             <span class="meta-label">Base</span>
@@ -38,6 +41,7 @@
             <strong>you@example.com</strong>
           </div>
         </div>
+        <!-- Sidebar navigation. -->
         <nav class="side-nav" aria-label="Primary navigation">
           <a data-nav="home" href="index.html">Home</a>
           <a data-nav="news" href="news.html">News</a>
@@ -45,10 +49,12 @@
           <a data-nav="projects" href="projects.html">Projects</a>
           <a href="index.html#contact">Contact</a>
         </nav>
+        <!-- Theme toggle button. -->
         <button class="theme-toggle" type="button" data-theme-toggle aria-live="polite">
           <span class="theme-toggle-icon" data-theme-icon aria-hidden="true">☀</span>
           <span class="theme-toggle-label" data-theme-label>Bright mode</span>
         </button>
+        <!-- Social links. -->
         <div class="social-links">
           <a href="https://github.com/your-id" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/your-id" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -57,6 +63,7 @@
       </aside>
 
       <main class="content">
+        <!-- Projects page intro: page title and short guidance text. -->
         <section class="page-intro">
           <p class="eyebrow">Projects</p>
           <h2>A deeper look at the systems, products, and experiments you have built.</h2>
@@ -66,6 +73,7 @@
           </p>
         </section>
 
+        <!-- Project entries: duplicate one list-card to add a project, or delete one to remove it. -->
         <section class="list-stack">
           <article class="list-card">
             <span class="list-date">2026</span>
@@ -80,6 +88,7 @@
               <span>TypeScript</span>
               <span>Product</span>
             </div>
+            <!-- Project links such as code, live demo, or case study. -->
             <div class="inline-links">
               <a href="https://github.com/your-id/project-one" target="_blank" rel="noreferrer">Code</a>
               <a href="https://example.com" target="_blank" rel="noreferrer">Live</a>
@@ -100,6 +109,7 @@
               <span>AI</span>
               <span>Experiment</span>
             </div>
+            <!-- Project links for this entry. -->
             <div class="inline-links">
               <a href="https://github.com/your-id/project-two" target="_blank" rel="noreferrer">Code</a>
               <a href="https://example.com" target="_blank" rel="noreferrer">Write-up</a>

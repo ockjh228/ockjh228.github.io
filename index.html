@@ -12,11 +12,13 @@
   </head>
   <body data-page="home">
     <div class="page-shell">
+      <!-- Shared sidebar: edit this block on every page if you want the left profile area to stay consistent site-wide. -->
       <aside class="profile-card">
         <div class="avatar">
           <img src="assets/profile.jpg" alt="Portrait of Jonghoon Ock" />
         </div>
 
+        <!-- Basic identity: name, role, and short intro. -->
         <div class="profile-copy">
           <p class="eyebrow">PERSONAL WEBSITE</p>
           <h1>Jonghoon Ock</h1>
@@ -27,6 +29,7 @@
           </p>
         </div>
 
+        <!-- Quick facts under the photo. Add or delete one <div>...</div> block to change the number of rows. -->
         <div class="meta-list">
           <div>
             <span class="meta-label">Base</span>
@@ -42,6 +45,7 @@
           </div>
         </div>
 
+        <!-- Left navigation menu. The data-nav value must match the page's body data-page value. -->
         <nav class="side-nav" aria-label="Primary navigation">
           <a data-nav="home" href="index.html">Home</a>
           <a data-nav="news" href="news.html">News</a>
@@ -50,11 +54,13 @@
           <a href="#contact">Contact</a>
         </nav>
 
+        <!-- Theme toggle button. Text/icon are controlled by script.js. -->
         <button class="theme-toggle" type="button" data-theme-toggle aria-live="polite">
           <span class="theme-toggle-icon" data-theme-icon aria-hidden="true">☀</span>
           <span class="theme-toggle-label" data-theme-label>Bright mode</span>
         </button>
 
+        <!-- Social links. Add or delete one <a>...</a> line to change the list. -->
         <div class="social-links">
           <a href="https://github.com/your-id" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/your-id" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -63,6 +69,7 @@
       </aside>
 
       <main class="content">
+        <!-- Home page hero: the first message visitors see on index.html. -->
         <section class="hero">
           <p class="hero-kicker">Academic profile layout with separate content pages</p>
           <h2>
@@ -80,6 +87,7 @@
           </div>
         </section>
 
+        <!-- Explore cards: duplicate or remove one destination-card to add or delete a category link. -->
         <section class="section">
           <div class="section-heading">
             <p class="eyebrow">Explore</p>
@@ -115,6 +123,7 @@
           </div>
         </section>
 
+        <!-- About section: good place for a longer self-introduction. -->
         <section class="section">
           <div class="section-heading">
             <p class="eyebrow">About</p>
@@ -136,6 +145,7 @@
           </div>
         </section>
 
+        <!-- Snapshot cards: duplicate or remove one article to change how many summary cards appear. -->
         <section class="section">
           <div class="section-heading">
             <p class="eyebrow">Snapshot</p>
@@ -157,6 +167,7 @@
           </div>
         </section>
 
+        <!-- Contact section: this is the target for the sidebar Contact link. -->
         <section id="contact" class="section">
           <div class="contact-banner">
             <div>

@@ -12,10 +12,12 @@
   </head>
   <body data-page="news">
     <div class="page-shell">
+      <!-- Shared sidebar: keep this block aligned with the other HTML pages for a consistent left profile area. -->
       <aside class="profile-card">
         <div class="avatar">
           <img src="assets/profile.jpg" alt="Portrait of Jonghoon Ock" />
         </div>
+        <!-- Basic identity shown in the sidebar. -->
         <div class="profile-copy">
           <p class="eyebrow">PERSONAL WEBSITE</p>
           <h1>Jonghoon Ock</h1>
@@ -24,6 +26,7 @@
             A running page for recent updates, announcements, and milestones.
           </p>
         </div>
+        <!-- Quick facts. Add or delete one row by copying or removing a single inner <div>. -->
         <div class="meta-list">
           <div>
             <span class="meta-label">Base</span>
@@ -38,6 +41,7 @@
             <strong>you@example.com</strong>
           </div>
         </div>
+        <!-- Sidebar navigation. -->
         <nav class="side-nav" aria-label="Primary navigation">
           <a data-nav="home" href="index.html">Home</a>
           <a data-nav="news" href="news.html">News</a>
@@ -45,10 +49,12 @@
           <a data-nav="projects" href="projects.html">Projects</a>
           <a href="index.html#contact">Contact</a>
         </nav>
+        <!-- Theme toggle button. -->
         <button class="theme-toggle" type="button" data-theme-toggle aria-live="polite">
           <span class="theme-toggle-icon" data-theme-icon aria-hidden="true">☀</span>
           <span class="theme-toggle-label" data-theme-label>Bright mode</span>
         </button>
+        <!-- Social links. -->
         <div class="social-links">
           <a href="https://github.com/your-id" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/your-id" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -57,6 +63,7 @@
       </aside>
 
       <main class="content">
+        <!-- News page intro: headline and short explanation for this page. -->
         <section class="page-intro">
           <p class="eyebrow">News</p>
           <h2>A place for updates, milestones, talks, and recent activity.</h2>
@@ -66,6 +73,7 @@
           </p>
         </section>
 
+        <!-- News items: duplicate one list-card to add an update, or delete one list-card to remove it. -->
         <section class="list-stack">
           <article class="list-card">
             <span class="list-date">Apr 2026</span>

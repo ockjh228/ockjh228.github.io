@@ -6,6 +6,7 @@ const themeToggle = document.querySelector("[data-theme-toggle]");
 const themeIcon = document.querySelector("[data-theme-icon]");
 const themeLabel = document.querySelector("[data-theme-label]");
 
+// Highlights the current page in the left navigation based on <body data-page="...">.
 document.querySelectorAll("[data-nav]").forEach((link) => {
   const isActive = link.dataset.nav === currentPage;
   link.classList.toggle("is-active", isActive);
@@ -25,6 +26,7 @@ try {
   savedTheme = null;
 }
 
+// Applies the selected theme and updates the toggle button text/icon.
 const applyTheme = (theme) => {
   root.setAttribute("data-theme", theme);
   body.setAttribute("data-theme", theme);
@@ -39,6 +41,7 @@ const applyTheme = (theme) => {
 applyTheme(savedTheme || preferredTheme);
 
 if (themeToggle) {
+  // Saves the user's choice so the same theme is used on the next visit.
   themeToggle.addEventListener("click", () => {
     const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
     try {
@@ -52,5 +55,6 @@ if (themeToggle) {
 
 const yearNode = document.getElementById("year");
 if (yearNode) {
+  // Keeps the footer year current without editing HTML every year.
   yearNode.textContent = new Date().getFullYear();
 }
