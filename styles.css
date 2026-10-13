@@ -600,3 +600,181 @@ h4 {
     width: 100%;
   }
 }
+
+/* Academic profile layout for the home page, modeled on the reference site's
+   quiet two-column layout while keeping the other section pages intact. */
+body[data-page="home"] {
+  background: var(--bg);
+}
+
+body[data-page="home"]::before {
+  display: none;
+}
+
+body[data-page="home"] .page-shell {
+  width: min(calc(100% - 48px), 1080px);
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 58px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+body[data-page="home"] .profile-card {
+  position: sticky;
+  top: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+body[data-page="home"] .avatar {
+  width: 150px;
+  aspect-ratio: 1;
+  margin: 0 0 20px;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+body[data-page="home"] .profile-copy h1 {
+  font-size: 1.55rem;
+  letter-spacing: -0.035em;
+}
+
+body[data-page="home"] .profile-copy .role {
+  margin-top: 8px;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+body[data-page="home"] .profile-copy .summary {
+  margin-top: 5px;
+  font-size: 0.92rem;
+}
+
+body[data-page="home"] .meta-list {
+  gap: 11px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+body[data-page="home"] .meta-list > div {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 8px;
+  align-items: start;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+body[data-page="home"] .meta-list strong,
+body[data-page="home"] .meta-list a {
+  color: var(--muted);
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body[data-page="home"] .meta-list a:hover,
+body[data-page="home"] .social-links a:hover,
+body[data-page="home"] .contact-section a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+body[data-page="home"] .social-links {
+  gap: 16px;
+  margin-top: 18px;
+}
+
+body[data-page="home"] .social-links a {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+body[data-page="home"] .content {
+  display: block;
+  padding-top: 2px;
+}
+
+body[data-page="home"] .section {
+  padding: 0 0 27px;
+  margin: 0 0 27px;
+  border-bottom: 1px solid var(--line);
+}
+
+body[data-page="home"] .section h2 {
+  margin-bottom: 12px;
+  font-size: 1.55rem;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+body[data-page="home"] .prose-panel {
+  display: block;
+}
+
+body[data-page="home"] .prose-panel p,
+body[data-page="home"] .section > p {
+  max-width: 760px;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+body[data-page="home"] .empty-note {
+  font-style: italic;
+}
+
+body[data-page="home"] .contact-section {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+body[data-page="home"] .contact-section a {
+  color: var(--accent);
+}
+
+body[data-page="home"] .site-footer {
+  width: min(calc(100% - 48px), 1080px);
+  padding-left: 308px;
+  padding-bottom: 28px;
+}
+
+@media (max-width: 1080px) {
+  body[data-page="home"] .page-shell {
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 38px;
+  }
+
+  body[data-page="home"] .site-footer {
+    padding-left: 258px;
+  }
+}
+
+@media (max-width: 760px) {
+  body[data-page="home"] .page-shell {
+    width: min(calc(100% - 36px), 620px);
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding-top: 26px;
+  }
+
+  body[data-page="home"] .profile-card {
+    position: static;
+  }
+
+  body[data-page="home"] .avatar {
+    width: 120px;
+  }
+
+  body[data-page="home"] .site-footer {
+    width: min(calc(100% - 36px), 620px);
+    padding-left: 0;
+  }
+}

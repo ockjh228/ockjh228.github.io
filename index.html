@@ -3,187 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jonghoon Ock | Personal Website</title>
+    <title>Jonghoon Ock</title>
     <meta
       name="description"
-      content="Personal website for Jonghoon Ock with dedicated pages for news, publications, and projects."
+      content="Jonghoon Ock — incoming master's student at Carnegie Mellon University, interested in robotics, AI, and control."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-page="home">
     <div class="page-shell">
-      <!-- Shared sidebar: edit this block on every page if you want the left profile area to stay consistent site-wide. -->
-      <aside class="profile-card">
+      <aside class="profile-card" aria-label="Profile">
         <div class="avatar">
           <img src="assets/profile.jpg" alt="Portrait of Jonghoon Ock" />
         </div>
-
-        <!-- Basic identity: name, role, and short intro. -->
         <div class="profile-copy">
-          <p class="eyebrow">PERSONAL WEBSITE</p>
           <h1>Jonghoon Ock</h1>
-          <p class="role">Developer, Researcher, Product Builder</p>
-          <p class="summary">
-            I build thoughtful digital products and explore how engineering,
-            research, and design come together in practical systems.
-          </p>
+          <p class="role">Incoming M.S. Student at Carnegie Mellon University</p>
+          <p class="summary">Robotics, AI, and Control</p>
         </div>
 
-        <!-- Quick facts under the photo. Add or delete one <div>...</div> block to change the number of rows. -->
         <div class="meta-list">
-          <div>
-            <span class="meta-label">Base</span>
-            <strong>Seoul, South Korea</strong>
-          </div>
-          <div>
-            <span class="meta-label">Focus</span>
-            <strong>Web, AI, Product Systems</strong>
-          </div>
-          <div>
-            <span class="meta-label">Contact</span>
-            <strong>you@example.com</strong>
-          </div>
+          <div><span aria-hidden="true">⌖</span><strong>Pittsburgh, PA</strong></div>
+          <div><span aria-hidden="true">⌂</span><strong>Carnegie Mellon University</strong></div>
+          <div><span aria-hidden="true">✉</span><a href="mailto:ockjh228@gmail.com">ockjh228@gmail.com</a></div>
         </div>
 
-        <!-- Left navigation menu. The data-nav value must match the page's body data-page value. -->
-        <nav class="side-nav" aria-label="Primary navigation">
-          <a data-nav="home" href="index.html">Home</a>
-          <a data-nav="news" href="news.html">News</a>
-          <a data-nav="publications" href="publications.html">Publications</a>
-          <a data-nav="projects" href="projects.html">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <!-- Theme toggle button. Text/icon are controlled by script.js. -->
-        <button class="theme-toggle" type="button" data-theme-toggle aria-live="polite">
-          <span class="theme-toggle-icon" data-theme-icon aria-hidden="true">☀</span>
-          <span class="theme-toggle-label" data-theme-label>Bright mode</span>
-        </button>
-
-        <!-- Social links. Add or delete one <a>...</a> line to change the list. -->
-        <div class="social-links">
-          <a href="https://github.com/your-id" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/your-id" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://your-notion-or-blog.com" target="_blank" rel="noreferrer">Blog</a>
+        <div class="social-links" aria-label="External links">
+          <a href="https://github.com/ockjh228" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </aside>
 
       <main class="content">
-        <!-- Home page hero: the first message visitors see on index.html. -->
-        <section class="hero">
-          <p class="hero-kicker">Academic profile layout with separate content pages</p>
-          <h2>
-            A profile-first homepage
-            <span>with separate pages for key work.</span>
-          </h2>
-          <p class="hero-body">
-            This site keeps the profile and introduction visible in a structured
-            academic-style layout, while sending visitors to dedicated pages for
-            news, publications, and projects.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="projects.html">Open Projects</a>
-            <a class="button ghost" href="publications.html">See Publications</a>
-          </div>
-        </section>
-
-        <!-- Explore cards: duplicate or remove one destination-card to add or delete a category link. -->
-        <section class="section">
-          <div class="section-heading">
-            <p class="eyebrow">Explore</p>
-            <h3>Navigate by the type of work you want to highlight.</h3>
-          </div>
-          <div class="destination-grid">
-            <a class="destination-card" href="news.html">
-              <span class="destination-label">Updates & Timeline</span>
-              <h4>News</h4>
-              <p>
-                A running list of recent updates, milestones, announcements,
-                and notable progress.
-              </p>
-            </a>
-
-            <a class="destination-card" href="publications.html">
-              <span class="destination-label">Papers & Writing</span>
-              <h4>Publications</h4>
-              <p>
-                A place for papers, technical writing, talks, and external
-                references.
-              </p>
-            </a>
-
-            <a class="destination-card" href="projects.html">
-              <span class="destination-label">Products & Experiments</span>
-              <h4>Projects</h4>
-              <p>
-                A focused view of projects, experiments, open-source work, and
-                case studies.
-              </p>
-            </a>
-          </div>
-        </section>
-
-        <!-- About section: good place for a longer self-introduction. -->
-        <section class="section">
-          <div class="section-heading">
-            <p class="eyebrow">About</p>
-            <h3>The homepage is where your overall narrative should live.</h3>
-          </div>
-          <div class="panel prose-panel">
+        <section class="section" id="about">
+          <h2>About me</h2>
+          <div class="prose-panel">
             <p>
-              This section works best as a concise introduction to who you are,
-              what you are currently working on, and what kinds of problems you
-              care about. It should read like a short professional overview,
-              not a long biography.
-            </p>
-            <p>
-              If you are research-oriented, connect your current research agenda
-              to your earlier background. If you are product-oriented, explain
-              your strengths through the systems you build and the outcomes you
-              care about.
+              Hi, I’m Jonghoon. I’m an incoming M.S. student at Carnegie Mellon
+              University. My interests are in robotics, artificial intelligence,
+              and control.
             </p>
           </div>
         </section>
 
-        <!-- Snapshot cards: duplicate or remove one article to change how many summary cards appear. -->
-        <section class="section">
-          <div class="section-heading">
-            <p class="eyebrow">Snapshot</p>
-            <h3>A brief summary of what you do right now.</h3>
-          </div>
-          <div class="focus-grid">
-            <article class="panel compact">
-              <h4>Current Role</h4>
-              <p>Use this space for your title, affiliation, lab, team, or independent work.</p>
-            </article>
-            <article class="panel compact">
-              <h4>Main Interest</h4>
-              <p>Describe the problem, topic, or technical direction that currently matters most to you.</p>
-            </article>
-            <article class="panel compact">
-              <h4>Open For</h4>
-              <p>List the kinds of collaboration, roles, talks, or consulting opportunities you welcome.</p>
-            </article>
+        <section class="section" id="research">
+          <h2>Research interests</h2>
+          <div class="prose-panel">
+            <p>
+              I’m interested in intelligent robotic systems and the methods that
+              help them perceive, make decisions, and act reliably in the real
+              world. I’m especially interested in the intersection of robot
+              learning, AI, and control.
+            </p>
           </div>
         </section>
 
-        <!-- Contact section: this is the target for the sidebar Contact link. -->
-        <section id="contact" class="section">
-          <div class="contact-banner">
-            <div>
-              <p class="eyebrow">Contact</p>
-              <h3>For collaboration, opportunities, or conversations, reach out here.</h3>
-            </div>
-            <a class="button primary" href="mailto:you@example.com">Send Email</a>
-          </div>
+        <section class="section" id="news">
+          <h2>News</h2>
+          <p class="empty-note">Updates will be posted here.</p>
+        </section>
+
+        <section class="section" id="publications">
+          <h2>Publications</h2>
+          <p class="empty-note">Publications will be listed here.</p>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <h2>Contact</h2>
+          <p><a href="mailto:ockjh228@gmail.com">ockjh228@gmail.com</a></p>
         </section>
       </main>
     </div>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> Jonghoon Ock. Built for GitHub Pages.</p>
+      <p>© <span id="year"></span> Jonghoon Ock</p>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
